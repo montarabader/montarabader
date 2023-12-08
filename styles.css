@@ -1,0 +1,55 @@
+body {
+  font-family: Times;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+
+header {
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: gray;
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+    flex-wrap: wrap;
+	justify-content: center;
+  }
+
+  nav a {
+    width: 30%;
+    margin: 5px; 
+    box-sizing: border-box;
+  }
+}
+
+section {
+  background-color: white; 
+  padding: 10px;
+  text-align: left;
+  margin: 0px auto; 
+  width: 90%;
+  max-width: 800px; 
+  height: 500px;
+}
